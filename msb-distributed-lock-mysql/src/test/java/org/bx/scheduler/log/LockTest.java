@@ -70,7 +70,7 @@ public class LockTest {
     @Test
     public void testMysqlIDDistributeLock() throws Exception {
         int[] count = {0};
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100; i++) {
             executorService.submit(() -> {
                 final MysqlIDDistributeLock lock = new MysqlIDDistributeLock(dataSource, 3000, key);
                 try {
