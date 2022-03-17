@@ -1,6 +1,5 @@
 package com.msb.lock.etcd;
 
-import javafx.concurrent.ScheduledService;
 import lombok.Data;
 
 import java.util.concurrent.ScheduledExecutorService;
